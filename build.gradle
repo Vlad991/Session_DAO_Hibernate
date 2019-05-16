@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'com.infopulse'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.hibernate:hibernate-gradle-plugin:5.3.6.Final'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.2.Final'
+    compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.4.2.Final'
+    compile group: 'org.hibernate', name: 'hibernate-hikaricp', version: '5.4.2.Final'
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.6'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.5'
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+    compile group: 'org.hsqldb', name: 'hsqldb', version: '2.4.1'
+    compile group: 'junit', name: 'junit', version: '4.10'
+    annotationProcessor 'org.projectlombok:lombok:1.16.20'
+    implementation 'org.projectlombok:lombok:1.16.20'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.26'
+}
